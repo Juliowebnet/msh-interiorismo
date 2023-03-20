@@ -4,7 +4,7 @@
     <div class="v-contact-us__section">
       <div class="v-contact-us__content">
         <p class="v-contact-us__title">
-          Déjanos un mensaje y esteremos felices de conversar sobre tu proyecto
+          Déjanos un mensaje y estaremos felices de conversar sobre tu proyecto
         </p>
         <form action="" class="v-contact-us__form">
           <div class="v-contact-us__form__input-group">

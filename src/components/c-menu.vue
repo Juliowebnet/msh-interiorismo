@@ -3,7 +3,7 @@
     <RouterLink to="/" class="c-menu__nav-item">Inicio</RouterLink>
     <RouterLink to="/about-us" class="c-menu__nav-item">Conócenos</RouterLink>
     <RouterLink to="/portfolio" class="c-menu__nav-item">Portafolio</RouterLink>
-    <RouterLink to="/contact-us" class="c-menu__nav-item">Contactanos</RouterLink>
+    <RouterLink to="/contact-us" class="c-menu__nav-item">Contáctanos</RouterLink>
   </div>
 </template>
 

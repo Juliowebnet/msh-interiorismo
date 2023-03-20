@@ -7,10 +7,8 @@
         <div class="v-project__text-group">
           <p class="v-project__title">{{ projectData.name }}</p>
           <div class="v-project__features">
-            <p>Piantini, Santo Domingo</p>
-            <p>1piso</p>
-            <p>670 M2</p>
-            <p>2019year</p>
+            <p>{{ projectData.sector }}</p>
+            <p>{{ projectData.year }} year</p>
           </div>
         </div>
       </div>
@@ -18,13 +16,9 @@
         <img :src="projectData.mainImg" :alt="projectData.name" class="v-project__main-img" />
       </div>
       <div class="v-project__gallery">
-        <div
-          v-for="(img, index) in projectData.gallery.slice(start, end)"
-          :key="index"
-          class="v-project__gallery-item"
-        >
-          <img :src="img" alt="gallery-item" />
-        </div>
+        <transition name="gallery">
+          <CGallery :data="projectData.gallery.slice(start, end)" />
+        </transition>
         <div class="v-project__page-selector-group">
           <div
             v-for="page of calculatePages"
@@ -43,12 +37,14 @@
 <script>
 import CHeader from '../components/c-header.vue'
 import CFooter from '../components/c-footer.vue'
+import CGallery from '../components/c-gallery.vue'
 import projects from '../data/projects.json'
 export default {
   name: 'v-project',
   components: {
     CHeader,
-    CFooter
+    CFooter,
+    CGallery
   },
   data() {
     return {
@@ -120,10 +116,6 @@ export default {
   flex-wrap: wrap;
   margin: 60px 0;
 }
-.v-project__gallery-item {
-  width: 328px;
-  height: 185px;
-}
 .v-project__page-selector-group {
   width: 100%;
   display: flex;
@@ -139,5 +131,30 @@ export default {
 }
 .v-project__page-selector-active {
   background-color: var(--secondary-color);
+}
+.gallery-enter-active {
+  animation: slide 0.5s ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(-700px);
+  }
+}
+
+.gallery-leave-active {
+  animation: slide 0.5s ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translatex(-700px);
+  }
+  to {
+    transform: translatex(0);
+  }
 }
 </style>

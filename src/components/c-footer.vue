@@ -3,7 +3,7 @@
     <div class="c-footer__content">
       <img src="../assets/img/Logo.svg" alt="MSH INTERIORISMO" class="c-footer__logo" />
       <p class="c-footer__content__text">
-        Brindamos soluciones innovadoras, vanguardistas y especificas de acuerdo a las necesidades
+        Brindamos soluciones innovadoras, vanguardistas y específicas de acuerdo a las necesidades
         de nuestros clientes, creando lugares soñados que provocan emociones e invitan a crear
         historias.
       </p>

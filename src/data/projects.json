@@ -1,7 +1,9 @@
  [
     {
         "id": 1,
-        "name": "Los Pinos",
+        "name": "Residencia Los Pinos",
+        "year": "2022",
+        "sector": "Los Pinos",
         "projectId": "los-pinos",
         "thumbnail": "/01-los-pinos/01_400x400.jpg",
         "mainImg": "/01-los-pinos/01_1900x800.jpg",
@@ -51,6 +53,8 @@
     {
         "id": 2,
         "name": "Torre Regatta Veramia",
+        "year": "2022",
+        "sector": "Piantini",
         "projectId": "torre-regatta-veramia",
         "thumbnail": "/02-torre-regatta-veramia/01_400x400.jpg",
         "mainImg": "/02-torre-regatta-veramia/01_1900x800.jpg",
@@ -73,6 +77,8 @@
     {
         "id": 3,
         "name": "Torre Adriana",
+        "year": "2022",
+        "sector": "Piantini",
         "projectId": "torre-adriana",
         "thumbnail": "/03-torre-adriana/01_400x400.jpg",
         "mainImg": "/03-torre-adriana/01_1900x800.jpg",
@@ -99,7 +105,9 @@
     },
     {
         "id": 4,
-        "name": "Torre IX+Seis",
+        "name": "Torre 9+Seis",
+        "year": "2019",
+        "sector": "Paraíso",
         "projectId": "torre-9",
         "thumbnail": "/04-torre-9/01_400x400.jpg",
         "mainImg": "/04-torre-9/01_1900x800.jpg",
@@ -128,6 +136,8 @@
     {
         "id": 5,
         "name": "Torre Cainco IV",
+        "year": "2022",
+        "sector": "El Millón",
         "projectId": "torre-cainco-iv",
         "thumbnail": "/05-torre-cainco-iv/01_400x400.jpg",
         "mainImg": "/05-torre-cainco-iv/01_1900x800.jpg",
@@ -157,6 +167,8 @@
     {
         "id": 6,
         "name": "Torre Cumbre VIII",
+        "year": "2019",
+        "sector": "Naco",
         "projectId": "torre-cumbre-viii",
         "thumbnail": "/06-torre-cumbre-viii/01_400x400.jpg",
         "mainImg": "/06-torre-cumbre-viii/01_1900x800.jpg",
@@ -185,6 +197,8 @@
     {
         "id": 7,
         "name": "Torre María Eugenia XVI",
+        "year": "2020",
+        "sector": "Evaristo Morales",
         "projectId": "torre-maria-eugenia-xvi",
         "thumbnail": "/07-torre-maria-eugenia-xvi/01_400x400.jpg",
         "mainImg": "/07-torre-maria-eugenia-xvi/01_1900x800.jpg",
@@ -218,6 +232,8 @@
     {
         "id": 8,
         "name": "Torre Balcones del Mirador",
+        "year": "2020",
+        "sector": "Cacicazgos",
         "projectId": "torre-balcones-del-mirador",
         "thumbnail": "/08-torre-balcones-del-mirador/01_400x400.jpg",
         "mainImg": "/08-torre-balcones-del-mirador/01_1900x800.jpg",
@@ -253,7 +269,9 @@
     },
     {
         "id": 9,
-        "name": "Torre RRV",
+        "name": "Torre RR5",
+        "year": "2021",
+        "sector": "Evaristo Morales",
         "projectId": "torre-rr5",
         "thumbnail": "/09-torre-rr5/01_400x400.jpg",
         "mainImg": "/09-torre-rr5/01_1900x800.jpg",
@@ -279,6 +297,8 @@
     {
         "id": 10,
         "name": "Torre Urvini II",
+        "year": "2020",
+        "sector": "Mirador Norte",
         "projectId": "torre-urvini-ii",
         "thumbnail": "/10-torre-urvini-ii/01_400x400.jpg",
         "mainImg": "/10-torre-urvini-ii/01_1900x800.jpg",
@@ -301,6 +321,8 @@
     {
         "id": 11,
         "name": "Torre Paraíso Real",
+        "year": "2022",
+        "sector": "Urbanización Real",
         "projectId": "torre-paraiso-real",
         "thumbnail": "/11-torre-paraiso-real/01_400x400.jpg",
         "mainImg": "/11-torre-paraiso-real/01_1900x800.jpg",
@@ -329,6 +351,8 @@
     {
         "id": 12,
         "name": "Residencia Altos de Arroyo Hondo II",
+        "year": "2021",
+        "sector": "Altos de Arroyo Hondo II",
         "projectId": "altos-de-arroyo-hondo-ii",
         "thumbnail": "/12-altos-de-arroyo-hondo-ii/01_400x400.jpg",
         "mainImg": "/12-altos-de-arroyo-hondo-ii/01_1900x800.jpg",
@@ -359,6 +383,8 @@
     {
         "id": 13,
         "name": "Torre Regatta del Paseo",
+        "year": "2019",
+        "sector": "Piantini",
         "projectId": "torre-regatta-del-paseo",
         "thumbnail": "/13-torre-regatta-del-paseo/01_400x400.jpg",
         "mainImg": "/13-torre-regatta-del-paseo/01_1900x800.jpg",
@@ -380,6 +406,8 @@
     {
         "id": 14,
         "name": "Torre Gil Roma XX",
+        "year": "2021",
+        "sector": "Evaristo Morales",
         "projectId": "torre-gil-roma-xx",
         "thumbnail": "/14-torre-gil-roma-xx/01_400x400.jpg",
         "mainImg": "/14-torre-gil-roma-xx/01_1900x800.jpg",
@@ -398,6 +426,8 @@
     {
         "id": 15,
         "name": "El Ingenio",
+        "year": "2019",
+        "sector": "Casa de Campo",
         "projectId": "el-ingenio",
         "thumbnail": "/15-el-ingenio/01_400x400.jpg",
         "mainImg": "/15-el-ingenio/01_1900x800.jpg",
@@ -434,6 +464,8 @@
     {
         "id": 16,
         "name": "Hemingway",
+        "year": "2021",
+        "sector": "Juan Dolio",
         "projectId": "hemingway",
         "thumbnail": "/16-hemingway/01_400x400.jpg",
         "mainImg": "/16-hemingway/01_1900x800.jpg",
@@ -460,6 +492,8 @@
     {
         "id": 17,
         "name": "Selene V",
+        "year": "2022",
+        "sector": "Punta Cana",
         "projectId": "selene-v",
         "thumbnail": "/17-selene-v/01_400x400.jpg",
         "mainImg": "/17-selene-v/01_1900x800.jpg",
