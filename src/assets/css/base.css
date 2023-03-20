@@ -1,0 +1,39 @@
+/* fuentes */
+@font-face {
+  font-family: "Lovera";
+  src: url(../fonts/lovera/Lovera.otf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/./Poppins/Poppins-Regular.ttf);
+}
+
+/* color palette */
+:root {
+  
+  --primary-color: #325763;
+  --secondary-color: #EBD0BD;
+  --secondary-color-dark: #C5A589;
+  
+  --white: #ffffff;
+  --black: #000000;
+  --gray-super-light: #f4f4f4;
+  --gray-light: #b9b7b7;
+  --gray: #4C524A;
+
+  --gray-opacity: #4c524a47;
+  --gray-dark-opacity: #4c524a8b;
+
+  --footer-border: #ffffff26;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--gray);
+  font-family: 'Poppins';
+}
+a:link, a:visited{
+text-decoration: none;
+}
