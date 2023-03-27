@@ -8,26 +8,14 @@
           <p class="v-project__title">{{ projectData.name }}</p>
           <div class="v-project__features">
             <p>{{ projectData.sector }}</p>
-            <p>{{ projectData.year }} year</p>
+            <p>{{ projectData.year }} año</p>
           </div>
         </div>
       </div>
-      <div class="v-project__main-img-container">
-        <img :src="projectData.mainImg" :alt="projectData.name" class="v-project__main-img" />
-      </div>
       <div class="v-project__gallery">
         <transition name="gallery">
-          <CGallery :data="projectData.gallery.slice(start, end)" />
+          <CGallery :projectData="projectData" />
         </transition>
-        <div class="v-project__page-selector-group">
-          <div
-            v-for="page of calculatePages"
-            :key="page"
-            class="v-project__page-selector"
-            @click="setPage(page * 10)"
-            :class="{ 'v-project__page-selector-active': selectIndicator(page * 10) }"
-          ></div>
-        </div>
       </div>
     </div>
     <CFooter />
@@ -46,28 +34,9 @@ export default {
     CFooter,
     CGallery
   },
-  data() {
-    return {
-      page: 1,
-      start: 0,
-      end: 10
-    }
-  },
   computed: {
     projectData() {
       return projects.find((project) => project.projectId === this.$route.params.id)
-    },
-    calculatePages() {
-      return Math.ceil(this.projectData.gallery.length / 10)
-    }
-  },
-  methods: {
-    setPage(val) {
-      this.end = val
-      this.start = val - 10
-    },
-    selectIndicator(val) {
-      return val === this.end
     }
   }
 }
@@ -99,14 +68,6 @@ export default {
   gap: 20px;
   font-size: 14px;
   color: var(--gray-light);
-}
-.v-project__main-img-container {
-  width: 100%;
-  height: 800px;
-  overflow: hidden;
-}
-.v-project__main-img {
-  width: 100%;
 }
 .v-project__gallery {
   width: 100%;

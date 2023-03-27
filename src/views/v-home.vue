@@ -16,7 +16,9 @@
         />
         <p class="v-home__content__instagram-name">msh.interiorismo</p>
       </a>
-      <div class="v-home__content__instagram-feed"></div>
+      <div class="v-home__content__instagram-feed">
+        <InstagramFeed :count="5" accessToken="" />
+      </div>
     </div>
     <CFooter />
   </div>
@@ -42,7 +44,7 @@ export default {
   background-color: var(--secondary-color);
 }
 .v-home__content {
-  height: 450px;
+  min-height: 450px;
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -73,6 +75,7 @@ export default {
   color: var(--primary-color);
   margin: 0;
 }
-/* .v-home__content__instagram-feed {
-} */
+.v-home__content__instagram-feed {
+  margin-top: 30px;
+}
 </style>
