@@ -6,14 +6,32 @@
         <p class="v-contact-us__title">
           Déjanos un mensaje y estaremos felices de conversar sobre tu proyecto
         </p>
-        <form action="" class="v-contact-us__form">
+        <form ref="form" @submit.prevent="sendEmail" class="v-contact-us__form">
           <div class="v-contact-us__form__input-group">
-            <input type="text" class="v-contact-us__form__input" placeholder="NOMBRE" />
-            <input type="text" class="v-contact-us__form__input" placeholder="+829 356 7688" />
+            <input
+              type="text"
+              class="v-contact-us__form__input"
+              name="from_name"
+              v-model="name"
+              placeholder="NOMBRE"
+            />
+            <input
+              type="text"
+              class="v-contact-us__form__input"
+              name="from_phone"
+              v-model="phone"
+              placeholder="+829 356 7688"
+            />
           </div>
-          <input type="text-area" class="v-contact-us__form__text-area" placeholder="MENSAJE" />
+          <input
+            type="text-area"
+            class="v-contact-us__form__text-area"
+            name="message"
+            v-model="message"
+            placeholder="MENSAJE"
+          />
 
-          <button class="v-contact-us__form__button">ENVIAR</button>
+          <button type="submit" class="v-contact-us__form__button">ENVIAR</button>
         </form>
       </div>
     </div>
@@ -40,6 +58,7 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser'
 import CHeader from '../components/c-header.vue'
 import CFooter from '../components/c-footer.vue'
 export default {
@@ -47,6 +66,29 @@ export default {
   components: {
     CHeader,
     CFooter
+  },
+
+  data() {
+    return {
+      name: '',
+      phone: '',
+      message: ''
+    }
+  },
+  methods: {
+    sendEmail(event) {
+      emailjs
+        .sendForm('service_6dxz0y4', 'template_21kjllf', this.$refs.form, 'OE7pH0WAB3bs9JnyY')
+        .then(
+          (result) => {
+            console.log('SUCCESS!', result.text)
+            event.target.reset()
+          },
+          (error) => {
+            console.log('FAILED...', error.text)
+          }
+        )
+    }
   }
 }
 </script>
@@ -115,6 +157,7 @@ export default {
 .v-contact-us__form__button {
   width: 150px;
   height: 45px;
+  cursor: pointer;
   border-radius: 30px;
   border: none;
   background-color: var(--primary-color);

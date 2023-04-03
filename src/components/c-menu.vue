@@ -32,4 +32,20 @@ export default {
 .c-menu__nav-item.router-link-active {
   border-bottom: solid 2px var(--white);
 }
+@media screen and (max-width: 1080px) {
+  .c-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .c-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .c-menu {
+    display: none;
+  }
+}
 </style>

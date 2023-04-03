@@ -78,4 +78,29 @@ export default {
 .v-home__content__instagram-feed {
   margin-top: 30px;
 }
+
+@media screen and (max-width: 1080px) {
+  .v-home__content {
+    padding: 0;
+  }
+  .v-home__content-title {
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .v-home__content {
+    padding: 0;
+  }
+  .v-home__content-title {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v-home__content {
+    padding: 0;
+  }
+  .v-home__content-title {
+    font-size: 34px;
+  }
+}
 </style>

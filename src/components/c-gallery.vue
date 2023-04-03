@@ -2,10 +2,10 @@
   <div class="c-gallery__main-img-container">
     <div class="c-gallery__main-img-controller">
       <div class="c-gallery__icon-controller" @click="backImg()">
-        <img src="../assets/img/icon-back-arrow.svg" alt="back-arrow" />
+        <img src="../assets/img/icon-back-arrow-gray.svg" alt="back-arrow" />
       </div>
       <div class="c-gallery__icon-controller" @click="nextImg()">
-        <img src="../assets/img/icon-next-arrow.svg" alt="next-arrow" />
+        <img src="../assets/img/icon-next-arrow-gray.svg" alt="next-arrow" />
       </div>
     </div>
     <img :src="mainImageGroup[imgId]" :alt="projectData.name" class="c-gallery__main-img" />
@@ -106,7 +106,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(33, 32, 32, 0.379);
 }
 .c-gallery__main-img-controller {
   width: 100%;

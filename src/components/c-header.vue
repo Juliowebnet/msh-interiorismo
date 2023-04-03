@@ -45,4 +45,25 @@ export default {
   height: 100px;
   padding: 0 120px;
 }
+@media screen and (max-width: 1080px) {
+  .c-header__img {
+    width: 100px;
+    height: 150px;
+    padding: 0 120px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .c-header__img {
+    width: 100px;
+    height: 150px;
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .c-header__img {
+    width: 100px;
+    height: 150px;
+    padding: 0 40px;
+  }
+}
 </style>

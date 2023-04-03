@@ -31,7 +31,7 @@ export default {
 <style scoped>
 .c-footer {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   background-color: var(--primary-color);
   color: var(--white);
   display: flex;
