@@ -118,4 +118,14 @@ export default {
     transform: translatex(0);
   }
 }
+
+@media screen and (max-width: 1080px) {
+}
+@media screen and (max-width: 780px) {
+  .v-project__text-group {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+}
 </style>

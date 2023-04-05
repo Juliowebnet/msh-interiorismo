@@ -68,4 +68,19 @@ export default {
   text-align: center;
   padding: 5px 0;
 }
+@media screen and (max-width: 1080px) {
+}
+@media screen and (max-width: 780px) {
+  .c-footer__content {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .c-footer__content {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+}
 </style>

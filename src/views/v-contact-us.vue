@@ -167,7 +167,7 @@ export default {
 }
 .v-contact-us__rrss {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   background-color: var(--white);
   display: flex;
   justify-content: center;
@@ -184,5 +184,64 @@ export default {
   font-size: 34px;
   color: var(--primary-color);
   text-decoration: none;
+}
+@media screen and (max-width: 1300px) {
+  .v-contact-us__content {
+    padding: 100px 80px;
+  }
+  .v-contact-us__title {
+    width: 100%;
+    font-size: 54px;
+  }
+
+  .v-contact-us__rrss-group {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .v-contact-us__rrss__img {
+    width: 50px;
+    height: 50px;
+  }
+  .v-contact-us__rrss__text {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .v-contact-us__title {
+    font-size: 44px;
+  }
+  .v-contact-us__rrss {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .v-contact-us__rrss__img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .v-contact-us__content {
+    padding: 100px 30px;
+  }
+  .v-contact-us__title {
+    font-size: 38px;
+  }
+  .v-contact-us__rrss {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v-contact-us__title {
+    font-size: 34px;
+  }
+  .v-contact-us__form__input-group {
+    flex-direction: column;
+  }
+  .v-contact-us__form__input {
+    width: 100%;
+  }
+  .v-contact-us__form__button {
+    width: 100%;
+  }
 }
 </style>

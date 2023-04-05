@@ -17,7 +17,11 @@
         <p class="v-home__content__instagram-name">msh.interiorismo</p>
       </a>
       <div class="v-home__content__instagram-feed">
-        <InstagramFeed :count="5" accessToken="" />
+        <InstagramFeed
+          :count="5"
+          accessToken="IGQVJYU2w4Y040TkFCRmlMSHBVaFlrLXE3WEJ3Ym9WRHNxaUpPVTJSSW9MR2ZA6ZAkt6ZAkhOcmF0ZA051d2JuMXFKVGtrQjZADSExiYkNUZAURYU2dmajB1WjhjOUl5bTVhM1pzZAnpvUWpzRGJJNERrS3lxZAwZDZD"
+        />
+        {{ phone }}
       </div>
     </div>
     <CFooter />
@@ -81,7 +85,7 @@ export default {
 
 @media screen and (max-width: 1080px) {
   .v-home__content {
-    padding: 0;
+    padding: 50px 0;
   }
   .v-home__content-title {
     font-size: 54px;
@@ -89,7 +93,7 @@ export default {
 }
 @media screen and (max-width: 780px) {
   .v-home__content {
-    padding: 0;
+    padding: 50px 0;
   }
   .v-home__content-title {
     font-size: 44px;
@@ -97,10 +101,17 @@ export default {
 }
 @media screen and (max-width: 480px) {
   .v-home__content {
-    padding: 0;
+    padding: 50px 0;
   }
   .v-home__content-title {
     font-size: 34px;
+  }
+  .v-home__content__instagram-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .v-home__content__instagram-name {
+    font-size: 24px;
   }
 }
 </style>

@@ -149,4 +149,27 @@ export default {
 .c-gallery__page-selector-active {
   background-color: var(--secondary-color);
 }
+@media screen and (max-width: 1080px) {
+}
+@media screen and (max-width: 780px) {
+  .c-gallery__icon-controller {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffffd1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .c-gallery__icon-controller img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .c-gallery__main-img-controller {
+    top: 410px;
+  }
+}
 </style>

@@ -112,4 +112,25 @@ export default {
   list-style: none;
   padding: 20px;
 }
+@media screen and (max-width: 1380px) {
+  .v-portfolio__projects {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 780px) {
+}
+@media screen and (max-width: 480px) {
+  .v-portfolio__projects {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .v-portfolio__projects {
+    gap: 10px;
+  }
+  .v-portfolio__project {
+    width: 300px;
+    height: 300px;
+  }
+}
 </style>

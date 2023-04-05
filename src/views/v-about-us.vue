@@ -4,7 +4,11 @@
     <div class="v-about-us__section">
       <div class="v-about-us__img-group">
         <img src="/about-us-01.jpg" alt="about-us-01" class="v-about-us__img" />
-        <img src="/about-us-02.jpg" alt="about-us-02" class="v-about-us__img" />
+        <img
+          src="/about-us-02.jpg"
+          alt="about-us-02"
+          class="v-about-us__img v-about-us__second-img"
+        />
       </div>
       <div class="v-about-us__text-group">
         <p class="v-about-us__subtitle">INTERIORISTA</p>
@@ -85,5 +89,54 @@ export default {
   font-size: 16px;
   line-height: 28px;
   margin: 30px 0;
+}
+@media screen and (max-width: 1200px) {
+  .v-about-us__section {
+    gap: 30px;
+    padding: 30px 30px 30px 0;
+  }
+  .v-about-us__img-group {
+    width: 50%;
+    gap: 10px;
+  }
+  .v-about-us__img {
+    width: 100%;
+  }
+  .v-about-us__second-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .v-about-us__section {
+    gap: 10px;
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+    align-items: center;
+  }
+  .v-about-us__img-group {
+    width: 65%;
+    gap: 0;
+  }
+  .v-about-us__second-img {
+    display: none;
+  }
+  .v-about-us__text-group {
+    width: 65%;
+    height: 100%;
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .v-about-us__section {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .v-about-us__img-group {
+    width: 100%;
+    gap: 10px;
+  }
+  .v-about-us__second-img {
+    display: none;
+  }
 }
 </style>
